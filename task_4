@@ -1,0 +1,11 @@
+def max_in(A, n):                                                
+    if n == 1:                                    
+        return A[n-1]                                                          
+    else:                                                                      
+        a=max_in(A, n-1)                                
+        b=A[n-1]                                                       
+        if a> b:                                                 
+            return a                                                    
+        else:                                                                  
+            return b                                                   
+print(max_in([11, 10, 9, 8, 7], 5))
